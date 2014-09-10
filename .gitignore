@@ -2,6 +2,9 @@
 coverage
 coverage.data
 
+# Gemfile
+Gemfile.lock
+
 # rdoc generated
 rdoc
 
@@ -35,12 +38,12 @@ pkg
 #tmtags
 
 # For emacs:
-#*~
+*~
 #\#*
 #.\#*
 
 # For vim:
-#*.swp
+*.swp
 
 # For redcar:
 #.redcar
