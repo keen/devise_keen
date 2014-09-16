@@ -1,10 +1,22 @@
 # devise_keen gem
 
-Track user signin and signouts automatically to your Keen IO project.
+Track user signin and signouts to your Keen IO project automatically.
 
 ## Requirements
 
+As this is a devise extension, you'll need the devise gem, along with some Keen IO related gems.
+
 The devise_keen gem requires the [keen gem](https://rubygems.org/gems/keen) and a [Keen IO account](https://keen.io) (free to sign up).
+
+## Installation
+
+The only thing you need to do is install the keen_devise gem,
+
+`gem install keen_devise`
+
+or add the `keen_devise` gem to your Gemfile:
+
+`gem 'keen_devise'`
 
 ## Configuration
 
@@ -14,8 +26,8 @@ There are three configuration paramters:
     *Required*. The project id to write to.
 *  `keen_write_key`  
     *Required*. The Keen IO write key.
-*  `keen_collection`  
-    The optional collection name to store events in. If not set, will default to `devise-keen`
+*  `keen_collection_prefix`  
+    This gems stores the signin and signout events in two different collections. If you do not specify a prefix, it will default to `devise-keen`. The collection names will look like {keen_collection_prefix}-signin and {keen_collection_prefix}-signout.
 
 Define these variables in `config/initializers/devise.rb`.
 
@@ -25,21 +37,16 @@ Example config:
 # Keen IO Config
 config.keen_project_id = "ASDF12345"  
 config.keen_write_key = "REALLYLONGWRITEKEYHERE1234567890"  
-config.keen_collection = "user-events"
+config.keen_collection_prefix = "user-events"
 ```
 
 ## Contributing to devise_keen
  
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-* Fork the project.
-* Start a feature/bugfix branch.
-* Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+* Make sure you're on the latest version of the gem to make sure the feature hasn't already been implemented.
+* If it hasn't, check to see if someone has created an issue for it.
+* If you want to be an awesome contributor, fork it, branch it, push it!
 
 ## Copyright
 
-Copyright (c) 2014 Alex Kleissner. See LICENSE.txt for
-further details.
+Copyright (c) 2014 Keen IO. See LICENSE.txt for further details.
 

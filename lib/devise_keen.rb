@@ -24,9 +24,9 @@ module Devise
   # Public: The name of the collection to use when recording events.
   # Set keen_collection in the Devise configuration file (config/initializers/devise.rb)
   #
-  #   Devise.keen_collection = "devise-keen"
-  mattr_accessor :keen_collection
-  @@keen_collection = "devise-keen"
+  #   Devise.keen_collection_prefix = "devise-keen"
+  mattr_accessor :keen_collection_prefix
+  @@keen_collection_prefix = "devise-keen"
 end
 
 module KeenTrackable
