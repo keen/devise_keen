@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "devise_keen.gemspec",
     "lib/devise_keen.rb",
     "lib/devise_keen/hooks/keen_metrics.rb",
     "lib/devise_keen/hooks/signin.rb",
