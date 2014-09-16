@@ -15,10 +15,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "devise_keen"
-  gem.homepage = "http://github.com/alex@keen.io/devise_keen"
+  gem.homepage = "https://github.com/keenlabs/devise_keen"
   gem.license = "MIT"
-  gem.summary = "Add basic automatic logging to the Keen IO service when a user logs in."
-  gem.description = "Publish an event to your Keen IO project every time a user logs in. Allows for customizing the collection name."
+  gem.summary = "Log signin and signout events to Keen IO."
+  gem.description = "Publish an event to your Keen IO project every time a user signs in or out. Allows for customizing the collection name."
   gem.email = "alex@keen.io"
   gem.authors = ["Alex Kleissner"]
   # dependencies defined in Gemfile
