@@ -40,6 +40,23 @@ config.keen_write_key = "REALLYLONGWRITEKEYHERE1234567890"
 config.keen_collection_prefix = "user-events"
 ```
 
+## Example Data Model
+
+```JSON
+{
+    "keen": {
+        "timestamp": "2014-09-16T21:41:36.490Z",
+        "created_at": "2014-09-16T21:41:36.490Z",
+        "id": "5418ae90c9e1630692c014ad"
+    },
+    "user": {
+        "email": "alex@keen.io",
+        "id": 1
+    },
+    "sign_in_time": "2014-09-16T14:41:36-07:00"
+}
+```
+
 ## Contributing to devise_keen
  
 * Make sure you're on the latest version of the gem to make sure the feature hasn't already been implemented.
