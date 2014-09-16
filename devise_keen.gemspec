@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.authors = ["Alex Kleissner"]
   s.date = "2014-09-16"
-  s.description = "Publish an event to your Keen IO project every time a user logs in. Allows for customizing the collection name."
+  s.description = "Publish an event to your Keen IO project every time a user signs in or out. Allows for customizing the collection name."
   s.email = "alex@keen.io"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -38,10 +38,10 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_devise_keen.rb"
   ]
-  s.homepage = "http://github.com/alex@keen.io/devise_keen"
+  s.homepage = "https://github.com/keenlabs/devise_keen"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.2.2"
-  s.summary = "Add basic automatic logging to the Keen IO service when a user logs in."
+  s.summary = "Log signin and signout events to Keen IO."
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
